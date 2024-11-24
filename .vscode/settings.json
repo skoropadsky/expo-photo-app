@@ -1,6 +1,6 @@
 {
-  "java.configuration.updateBuildConfiguration": "disabled",
-  "editor.formatOnSave": true,
-  "cSpell.words": ["sayem"],
-  "java.compile.nullAnalysis.mode": "automatic"
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "editor.formatOnSave": true,
+    "cSpell.words": ["mynetworth"],
+    "java.compile.nullAnalysis.mode": "automatic"
 }
