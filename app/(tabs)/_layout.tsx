@@ -26,15 +26,12 @@ export default function TabLayout() {
                 }}
             />
             <Tabs.Screen
-                name="about"
+                name="portfolio"
                 options={{
-                    title: "About",
+                    title: "Portfolio",
+                    headerShown: false,
                     tabBarIcon: ({ color, focused }) => (
-                        <Ionicons
-                            name={focused ? "information-circle" : "information-circle-outline"}
-                            color={color}
-                            size={24}
-                        />
+                        <Ionicons name={focused ? "pie-chart" : "pie-chart-outline"} color={color} size={24} />
                     ),
                 }}
             />
