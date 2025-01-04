@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1234",
+        "title": "Default Portfolio",
+        "description": "All my assets here",
+        "currencyId": "",
+        "avatarURL": "",
+        "color": "#4323aa"
+    },
+    {
+        "id": "2345",
+        "title": "Cars",
+        "description": "Cars performance",
+        "currencyId": "",
+        "avatarURL": "",
+        "color": "#6243cc"
+    },
+    {
+        "id": "3456",
+        "title": "Crypto",
+        "description": "Crypto currencies",
+        "currencyId": "usdtId",
+        "avatarURL": "",
+        "color": "#bc2355"
+    }
+]

@@ -6,6 +6,8 @@ import { StyleSheet } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { PaperProvider } from "react-native-paper"
 import { theme } from "@/styles/theme"
+import { Provider } from "react-redux"
+import store from "@/store"
 
 export default function RootLayout() {
     useEffect(() => {
@@ -13,14 +15,16 @@ export default function RootLayout() {
     }, [])
 
     return (
-        <SafeAreaView style={styles.container}>
-            <PaperProvider theme={theme}>
-                <Stack>
-                    <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-                    <Stack.Screen name="+not-found" />
-                </Stack>
-            </PaperProvider>
-        </SafeAreaView>
+        <Provider store={store}>
+            <SafeAreaView style={styles.container}>
+                <PaperProvider theme={theme}>
+                    <Stack>
+                        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                        <Stack.Screen name="+not-found" />
+                    </Stack>
+                </PaperProvider>
+            </SafeAreaView>
+        </Provider>
     )
 }
 
