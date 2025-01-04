@@ -11,7 +11,7 @@ import store from "@/store"
 
 export default function RootLayout() {
     useEffect(() => {
-        setStatusBarStyle("light")
+        setStatusBarStyle("dark")
     }, [])
 
     return (
